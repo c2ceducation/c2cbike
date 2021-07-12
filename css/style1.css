@@ -172,6 +172,10 @@ h2{
 	 padding-top: 2%;
 }
 
+.but{
+	margin-left: 46%;
+}
+
 #services{
 
 	text-align: center;
@@ -282,4 +286,26 @@ body{
 
 	text-align: center;
 	margin-top: 50px;
+}
+
+
+/* Service  */
+
+
+.details{
+
+	text-align: center;
+	color: #fa7f2d;
+}
+
+
+.bike-div{
+  margin-top: 50px;
+}
+
+.wash{
+
+margin-right: 200px;
+margin-left: 50px;
+
 }
