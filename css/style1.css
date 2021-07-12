@@ -179,7 +179,7 @@ h2{
 #services{
 
 	text-align: center;
-	padding-top: 2%;
+	padding-top: 5%;
 	font-family:"Times New Roman";
 }
 
@@ -308,4 +308,17 @@ body{
 margin-right: 200px;
 margin-left: 50px;
 
+}
+
+
+/* img of bike  */
+
+.imgg{
+
+	padding-top: 5%;
+}
+
+
+.us{
+	padding-top: 5%;
 }
