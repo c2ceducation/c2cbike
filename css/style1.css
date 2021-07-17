@@ -19,6 +19,15 @@ nav {
 	margin-right: 20px;
 }
 
+.rad{
+	border-radius: 30px;
+	border: 2px solid lightgrey;
+}
+
+.d-inline-block  b{
+
+}
+
 .main a{
 
 font-size: 20px;
@@ -47,11 +56,32 @@ font-size: 20px;
 }
 
 footer{
-background-image: linear-gradient( #000428 , #004e92 );
+background-image: linear-gradient( #09203F , #537895 );
 width: 100%;
 margin-top: 100px;
+}
 
+.col-12 h5{
+	text-align: center;
+	 font-size: 1.5em;
+}
 
+.col-12 hr{
+	background-color: white;
+	width: 50%;
+	padding-right: 10%;
+	padding-left: 0;
+}
+
+.fab{
+				font-size: 30px;
+				margin-right: 5px;
+
+}
+
+.col-12 h2{
+	margin-top: 30px;
+	margin-right: 5%;
 }
 
 
@@ -103,7 +133,7 @@ footer{
   color: #d5d5d5;
 
   padding-top: 1rem;
-	border-radius: 20px 20px 0px 0px;
+
 
 
 
@@ -239,7 +269,7 @@ body{
 #messageus{
 
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 
@@ -344,10 +374,295 @@ margin-left: 50px;
 
 .Registration{
 margin-left: 100px;
+margin-top: 50px;
 
 }
 
 /* About-Page */
 
 
+body{
+
+	margin: 0%;
+	padding: 0%;
+}
+
+.AboutDeep{
+		text-align: center;
+		margin-right: 80px;
+}
+
+
+
+
+
+.bike_img img{
+
+	width: 50%;
+	height: 90vh;
+
+}
+
+
+#about-us-h1{
+	font-size: 4em;
+	text-align: center;
+	color: black;
+	/* background-color: #f25a30; */
+
+
+
+	/* background-color: lightgrey; */
+	padding-bottom: 10px;
+
+	margin-bottom: 30px;
+}
+
+.mission-sec{
+	font-size: 2em;
+	text-align:center;
+	justify-content: center;
+	/* background-color: white; */
+	/* border: 1px solid black; */
+	/* background-image: url(https://images.pexels.com/photos/4338020/pexels-photo-4338020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+
+	padding-bottom: 0px;
+	padding-top: 20px;
+	/* background-color: #e69f2e; */
+	margin-bottom: 30%;
+
+}
+
+.mission-sec p{
+	font-size: 0.8em;
+	margin-left: 50px;
+	margin-right: 50px;
+	color: #e02f32;
+
+}
+
+
+#aboutsec{
+	margin: 0;
+	padding-top:  10px;
+	padding-bottom: 58px;
+	background-image: url(https://images.pexels.com/photos/4338020/pexels-photo-4338020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.vision-sec{
+
+	text-align: center;
+	justify-content: center;
+	padding-bottom:
+}
+
+.vision-sec h3{
+font-size: 3em;
+}
+
+.vision-sec p {
+font-size: 1.5em;
+color: white;
+}
+
+
+
+/* About Main Section Parallex */
+
+
+body{
+
+
+text-align: center;
+margin: 0;
+padding:  0;
+
+
+}
+
+
+.first i {
+	padding:  0;
+ border: 1px solid #63d0d6;
+	 padding-right: 40px;
+	 padding-left: 40px;
+
+	 background-color:#a4e7eb;
+	 /* border-radius: 20px; */
+
+	 font-size: 1.5em;
+}
+
+.first {
+
+
+
+  height: 50vh;
+  background-image:url(https://images.pexels.com/photos/3525584/pexels-photo-3525584.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  min-height: 100%
+  position: relative;
+    opacity: 1.2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    eight: 100%;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #0a0a0a;
+    text-transform: uppercase;
+
+
+
+}
+
+.second {
+
+  height: 50vh;
+  background-image:url(https://images.pexels.com/photos/2887807/pexels-photo-2887807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  min-height: 100%
+  position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    eight: 100%;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #fafbfc;
+    text-transform: uppercase;
+
+}
+.third {
+
+  height: 50vh;
+  background-image:url(https://images.pexels.com/photos/3644828/pexels-photo-3644828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  min-height: 100%
+  position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    eight: 100%;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #fafbfc;
+    text-transform: uppercase;
+
+}
+
+.Image{
+
+  height: 50vh;
+  background-image:url(https://images.pexels.com/photos/4808114/pexels-photo-4808114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  min-height: 100%
+  position: relative;
+    opacity:1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    eight: 100%;
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #fafbfc;
+    text-transform: uppercase;
+
+
+}
+
+h2{
+  display: block;
+font-size: 1.5em;
+margin-block-start: 0.83em;
+margin-block-end: 0.83em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+
+.one{
+
+   background-color: black;
+   color: white;
+   font-style: italic;
+   font-size: 25px;
+   background-size: cover;
+   background-color: #db2c35;
+    color: #ddd;
+    text-align: center;
+    padding: 80px 80px;
+
+
+
+  background-attachment: fixed;
+}
+
+.para{
+  background-color: black;
+  color: white;
+  font-style: italic;
+  font-size: 25px;
+  background-size: cover;
+  background-color: #2a51d1;
+   color: #ddd;
+   text-align: center;
+    padding: 50px 80px;
+
+
+ background-attachment: fixed;
+
+}
+
+.lara{
+
+  background-color: black;
+  color: white;
+  font-style: italic;
+  font-size: 25px;
+  background-size: cover;
+  background-color: #282e34;
+   color: #ddd;
+   text-align: center;
+    padding: 50px 80px;
+
+
+ background-attachment: fixed;
+}
+
+
+.view{
+
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 1.2em;
+	margin-left: 90%;
+	margin-top: 50px;
+}
+
+.back-sec{
+	border: 2px solid black;
+	font-weight: 700;
+	margin-left: 110%;
+	margin-top: 50px;
+	/* background-color: #1b6dd1; */
+	color: white;
 }
