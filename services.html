@@ -19,10 +19,10 @@
 
 <div class="bike-div" id="bike-div">
    <div class="row">
-      <div class="col-lg-3 col-xs-12 col-sm-4 col-md-4">
+      <div class="col-lg-3 col-xs-12 col-sm-6 col-md-5">
           <ul class="custom-tabular">
              <li><button class="w3-bar-item w3-button spl-1 act-spl" onclick="openCity('spl-1'); spl1();">Regular Service</button></li>
-             <li><button class="w3-bar-item w3-button spl-2" onclick="openCity('spl-2'); spl2();">Wash & Coat</button></li>
+           <li><button class="w3-bar-item w3-button spl-2" onclick="openCity('spl-2'); spl2();">Wash & Coat</button></li>
              <li><button class="w3-bar-item w3-button spl-3" onclick="openCity('spl-3'); spl3();">Custom Services</button></li>
              <li><button class="w3-bar-item w3-button spl-4" onclick="openCity('spl-4'); spl4();">Insurance</button></li>
              <li><button class="w3-bar-item w3-button btn3 spl-5" onclick="openCity('spl-5'); spl5();">Denting Painting</button></li>
@@ -32,27 +32,27 @@
 
          <div id="spl-1" class="w3-container city s-div-1 dis-b">
             <div class="div-1">
-               <h3>Regular Service  </h3>
-               <ul>
+               <h3><strong>Regular Service </strong> </h3> <br>
+
                  <li><span class="txt-1">Moped 100cc-125cc </span> <span> : </span> Service: Rs 399</li>
                  <li><span class="txt-1">Bike 100cc-125cc </span> <span> : </span> Service: Rs 299</li>
                  <li><span class="txt-1">Bike 135cc-180cc </span> <span> : </span> Service: Rs 399</li>
                  <li><span class="txt-1">Bike 180cc-220cc   </span> <span> : </span> Service: Rs 499</li>
                  <li><span class="txt-1">Bike 250cc-400cc </span> <span> : </span> Service: Rs 649</li>
                  <li><span class="txt-1">RE 350cc-500cc </span> <span> : </span> Service: Rs 699</li>
-               </ul>
+
                <p>( Charges are excluding engine oil )</p><br><br>
               <div class="services-include">
-                <h3>Regular Service includes : </h3>
+                <h3><strong>Regular Service includes : </strong></h3>
                   <div class="row">
                      <div class="col-lg-4 col-xs-12 col-sm-6 col-md-6">
-                       <ul>
+
                          <li>Air Filter Cleaning</li>
                          <li>Spark Plug Cleaning</li>
                          <li>Washing</li>
                          <li>Greasing/ Oiling</li>
                          <li>Engine oil replacement/ check</li>
-                       </ul>
+
                      </div>
                      <div class="col-lg-4 col-xs-12 col-sm-6 col-md-6">
                        <ul>
@@ -60,7 +60,7 @@
                          <li>Brake Cable inspect/ setting</li>
                          <li>Carburettor setting/ drain</li>
                          <li>Chain adjustment setting</li>
-                         <li>All lights check [Headlight, tail lamp, indicator]</li>
+
                        </ul>
                      </div>
                      <div class="col-lg-4 col-xs-12 col-sm-6 col-md-6">
@@ -78,7 +78,7 @@
 
          <div id="spl-2" class="w3-container city s-div-2" style="display:none">
            <div class="div-1">
-               <h3>Wash & Coat </h3><br>
+               <h3><strong>Wash & Coat</strong> </h3><br>
                <h4>.</h4>
                <ul>
                  <li class="wash" >Bike Steam Wash - Bike Spa with Pressure Wash - Rubbing And Buffing - Teflon Coating (Meguiars) - Degrease Engine
@@ -101,7 +101,8 @@
 
          <div id="spl-3" class="w3-container city s-div-3" style="display:none">
            <div class="div-1">
-               <h3>Custom Services </h3>
+               <h3><strong>Custom Services</strong> </h3>
+               <br>
                <h3>Suzuki AX100/ Max 100/ Samurai/ Shogun/ Shaolin </h3>
                <h3>Yamaha RX100/ RX135</h3>
                <br><br>
@@ -123,8 +124,8 @@
 
 
          <div id="spl-4" class="w3-container city s-div-3" style="display:none">
-           <div class="div-1">
-               <h3>Insurance Policy  </h3>
+           <div class="div-1">  <br>
+               <h3><strong>Insurance Policy</strong>  </h3>
 
                <br><br>
               <div class="services-include">
@@ -145,8 +146,8 @@
 
 
          <div id="spl-5" class="w3-container city s-div-5" style="display:none">
-           <div class="div-1">
-               <h3>Denting Painting</h3>
+           <div class="div-1"> <br>
+               <h3><strong>Denting Painting</strong></h3>
                <br><br>
               <div class="services-include">
                   <div class="row">
@@ -165,8 +166,132 @@
    </div>
  </div>
 
+ <script type="text/javascript">
+        function show1(){
+        	  document.getElementById('bike-div').style.display ='none';
+        	  document.getElementById('car-div').style.display = 'block';
+        	}
+        function show2(){
+        	  document.getElementById('car-div').style.display = 'none';
+        	  document.getElementById('bike-div').style.display = 'block';
+        	}
+    </script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+  <script>
+    function spl1(){
+    	$(".spl-1").addClass("act-spl");
+    	$(".spl-2").removeClass("act-spl");
+    	$(".spl-3").removeClass("act-spl");
+    	$(".spl-4").removeClass("act-spl");
+    	$(".spl-5").removeClass("act-spl");
+        $("#spl-1").addClass("dis-b");
+    	$("#spl-2").removeClass("dis-b");
+    	$("#spl-3").removeClass("dis-b");
+    	$("#spl-4").removeClass("dis-b");
+    	$("#spl-5").removeClass("dis-b");
+    	};
+   function spl2(){
+    	$(".spl-2").addClass("act-spl");
+    	$(".spl-1").removeClass("act-spl");
+    	$(".spl-3").removeClass("act-spl");
+    	$(".spl-4").removeClass("act-spl");
+    	$(".spl-5").removeClass("act-spl");
+    	$("#spl-2").addClass("dis-b");
+    	$("#spl-1").removeClass("dis-b");
+    	$("#spl-3").removeClass("dis-b");
+    	$("#spl-4").removeClass("dis-b");
+    	$("#spl-5").removeClass("dis-b");
+    	};
+   function spl3(){
+    	$(".spl-3").addClass("act-spl");
+    	$(".spl-2").removeClass("act-spl");
+    	$(".spl-1").removeClass("act-spl");
+    	$(".spl-4").removeClass("act-spl");
+    	$(".spl-5").removeClass("act-spl");
+    	$("#spl-3").addClass("dis-b");
+    	$("#spl-2").removeClass("dis-b");
+    	$("#spl-1").removeClass("dis-b");
+    	$("#spl-4").removeClass("dis-b");
+    	$("#spl-5").removeClass("dis-b");
+    	};
+  function spl4(){
+    	$(".spl-4").addClass("act-spl");
+    	$(".spl-2").removeClass("act-spl");
+    	$(".spl-3").removeClass("act-spl");
+    	$(".spl-1").removeClass("act-spl");
+    	$(".spl-5").removeClass("act-spl");
+    	$("#spl-4").addClass("dis-b");
+    	$("#spl-2").removeClass("dis-b");
+    	$("#spl-3").removeClass("dis-b");
+    	$("#spl-1").removeClass("dis-b");
+    	$("#spl-5").removeClass("dis-b");
+    	};
+    function spl5(){
+    	$(".spl-5").addClass("act-spl");
+    	$(".spl-2").removeClass("act-spl");
+    	$(".spl-3").removeClass("act-spl");
+    	$(".spl-4").removeClass("act-spl");
+    	$(".spl-1").removeClass("act-spl");
+    	$("#spl-5").addClass("dis-b");
+    	$("#spl-2").removeClass("dis-b");
+    	$("#spl-3").removeClass("dis-b");
+    	$("#spl-4").removeClass("dis-b");
+    	$("#spl-1").removeClass("dis-b");
+    	};
 
-    
+    	 function spl6(){
+    	    	$(".spl-6").addClass("act-spl");
+    	    	$(".spl-7").removeClass("act-spl");
+    	    	$(".spl-8").removeClass("act-spl");
+    	    	$(".spl-9").removeClass("act-spl");
+    	    	$("#spl-6").addClass("dis-b");
+    	    	$("#spl-7").removeClass("dis-b");
+    	    	$("#spl-8").removeClass("dis-b");
+    	    	$("#spl-9").removeClass("dis-b");
+    	    	};
+    	   function spl7(){
+    	    	$(".spl-7").addClass("act-spl");
+    	    	$(".spl-8").removeClass("act-spl");
+    	    	$(".spl-9").removeClass("act-spl");
+    	    	$(".spl-6").removeClass("act-spl");
+    	    	$("#spl-7").addClass("dis-b");
+    	    	$("#spl-6").removeClass("dis-b");
+    	    	$("#spl-8").removeClass("dis-b");
+    	    	$("#spl-9").removeClass("dis-b");
+    	    	};
+    	   function spl8(){
+    	    	$(".spl-8").addClass("act-spl");
+    	    	$(".spl-9").removeClass("act-spl");
+    	    	$(".spl-6").removeClass("act-spl");
+    	    	$(".spl-7").removeClass("act-spl");
+    	    	$("#spl-8").addClass("dis-b");
+    	    	$("#spl-7").removeClass("dis-b");
+    	    	$("#spl-6").removeClass("dis-b");
+    	    	$("#spl-9").removeClass("dis-b");
+    	    	};
+    	  function spl9(){
+    	    	$(".spl-9").addClass("act-spl");
+    	    	$(".spl-6").removeClass("act-spl");
+    	    	$(".spl-7").removeClass("act-spl");
+    	    	$(".spl-8").removeClass("act-spl");
+    	    	$("#spl-9").addClass("dis-b");
+    	    	$("#spl-7").removeClass("dis-b");
+    	    	$("#spl-8").removeClass("dis-b");
+    	    	$("#spl-6").removeClass("dis-b");
+    	    	};
+
+
+
+
 
 
 
