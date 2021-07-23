@@ -843,15 +843,41 @@ p{
 }
 
 
-.container-service{
+
+/* new css*/
+
+.container-servi{
   display: flex;
-  margin-top: 100px;
+	margin-top: 150px;
   margin-left: 100px;
   margin-right: 100px;
   border:2px solid black;
+
+	background-image: linear-gradient(#93a5cf , #e4efe9);
   padding-right: 50px;
+	border-radius: 2px;
 }
-.second_menu{
-  margin-left: 10px;
-  margin-right: 10px;
+
+
+.set{
+
+			padding-left: 100px;
 }
+
+
+.set1{
+
+	width: 250px;
+	margin-left: 200px;
+}
+
+.back-image{
+
+	background-image: linear-gradient(#43cea2 , #185a9d);
+	padding-bottom: 500px;
+	padding-top: 200px;
+
+
+}
+
+/* Rating */
