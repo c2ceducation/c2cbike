@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
+
 .hero{
     width: 100%;
 }
@@ -25,7 +21,7 @@
     height: 19vh;
     margin-bottom: 9px;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.7;
     border-radius: 10px;
 }
 
