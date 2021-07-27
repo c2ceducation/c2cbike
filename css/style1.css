@@ -38,7 +38,7 @@ font-size: 20px;
 
 }
  .menu li a:hover {
-  	background-color: #23cdaf;
+  	/* background-color: #23cdaf; */
   	color: white;
 
 }
