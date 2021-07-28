@@ -10,10 +10,53 @@
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
  	<script  src="js/jquery.js"></script>
  	<script src="js/bootstrap.min.js"></script>
+	<!--  -->
+
+	<script>
+	var stateObject = {
+	"India": { "Delhi": ["new Delhi", "North Delhi"],
+	"Kerala": ["Thiruvananthapuram", "Palakkad"],
+	"Goa": ["North Goa", "South Goa"],
+	},
+	"Australia": {
+	"South Australia": ["Dunstan", "Mitchell"],
+	"Victoria": ["Altona", "Euroa"]
+	}, "Canada": {
+	"Alberta": ["Acadia", "Bighorn"],
+	"Columbia": ["Washington", ""]
+	},
+	}
+	window.onload = function () {
+	var countySel = document.getElementById("countySel"),
+	stateSel = document.getElementById("stateSel"),
+	districtSel = document.getElementById("districtSel");
+	for (var country in stateObject) {
+	countySel.options[countySel.options.length] = new Option(country, country);
+	}
+	countySel.onchange = function () {
+	stateSel.length = 1; // remove all options bar first
+	districtSel.length = 1; // remove all options bar first
+	if (this.selectedIndex < 1) return; // done
+	for (var state in stateObject[this.value]) {
+	stateSel.options[stateSel.options.length] = new Option(state, state);
+	}
+	}
+	countySel.onchange(); // reset in case page is reloaded
+	stateSel.onchange = function () {
+	districtSel.length = 1; // remove all options bar first
+	if (this.selectedIndex < 1) return; // done
+	var district = stateObject[countySel.value][this.value];
+	for (var i = 0; i < district.length; i++) {
+	districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+	}
+	}
+	}
+	</script>
+
 
 
   </head>
-  </head>
+
 <body>
 
 	<div class="main">
@@ -52,7 +95,7 @@
         <a class="nav-link" href="bookride.html">Book Ride </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="blog.html">Blog</a>
+        <a class="nav-link" href="blog2.html">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="contactus.html">Contact Us</a>
@@ -77,9 +120,27 @@
 	<input type="email" name="email" id="email" placeholder="Enter Your Email" size="40"required><br><br>
 	<input type="password" name="pass" id="password" placeholder="Enter Your Password" size="40"required><br><br>
 	<input type="text" name="email" id="name" placeholder="Enter Your  Name" size="40"required><br><br>
-		<input type="text" name="email" id="state" placeholder="Enter Your State" size="40"required><br><br>
+		<input type="text" name="email" id="state" placeholder="Enter Your State" size="40"required> <br><br>
+
+ <select name="state" id="countySel" size="1">
+<option value="" selected="selected">Select Country</option>
+</select>
+<br>
+<br>
+ <select name="countrya" id="stateSel" size="1">
+<option value="" selected="selected">Please select Country first</option>
+</select>
+<br>
+<br>
+<select name="district" id="districtSel" size="1">
+<option value="" selected="selected">Please select State first</option>
+</select><br>
+
+
+		<br><br>
 			<input type="text" name="email" id="city" placeholder="Enter Your City" size="40"required><br><br>
 		<input type="text" name="email" id="address" placeholder="Enter Your Address" size="40"required><br><br>
+
 
 
 
