@@ -818,7 +818,7 @@ p{
 	color : red;
     position: relative;
     top: 50%;
-    width: 24em;
+    width: 100%;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
     font-size: 300%;
@@ -835,7 +835,7 @@ p{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 100%;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
